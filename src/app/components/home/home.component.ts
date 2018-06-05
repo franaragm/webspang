@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-
 @Component({
-  selector: 'app-body',
-  templateUrl: './body.component.html'
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styles: []
 })
-export class BodyComponent {
+export class HomeComponent {
 
   mostrar = true;
 
@@ -15,4 +15,5 @@ export class BodyComponent {
   };
 
   personajes: string[] = ['Spiderman', 'Venom', 'Dr. Octopus'];
+
 }

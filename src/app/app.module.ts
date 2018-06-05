@@ -1,20 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BodyComponent } from './components/body/body.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { DirectivasComponent } from './components/directivas/directivas.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+
+// Importar Rutas
+import {ROUTES} from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    BodyComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent,
+    DirectivasComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(ROUTES, {useHash: true})
   ],
   providers: [],
   bootstrap: [AppComponent]
