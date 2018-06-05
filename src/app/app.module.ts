@@ -13,6 +13,10 @@ import {ROUTES} from './app.routes';
 
 // Importar Directivas personalizadas
 import { ResaltadoDirective } from './directives/resaltado.directive';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarioNuevoComponent } from './components/usuario/usuario-nuevo.component';
+import { UsuarioEditarComponent } from './components/usuario/usuario-editar.component';
+import { UsuarioDetalleComponent } from './components/usuario/usuario-detalle.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { ResaltadoDirective } from './directives/resaltado.directive';
     NavbarComponent,
     DirectivasComponent,
     HomeComponent,
-    ResaltadoDirective
+    ResaltadoDirective,
+    UsuarioComponent,
+    UsuarioNuevoComponent,
+    UsuarioEditarComponent,
+    UsuarioDetalleComponent
   ],
   imports: [
     BrowserModule,

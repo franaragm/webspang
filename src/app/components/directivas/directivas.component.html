@@ -48,3 +48,13 @@
 </button>
 
 <p [appResaltado]="'orange'" class="mt-5">Texto texto texto</p>
+
+<button class="btn btn-warning mr-2" (click)="alertaswitch = 'warning'">
+  Cambiar switch a warning
+</button>
+
+<div [ngSwitch]="alertaswitch">
+  <div *ngSwitchCase="'info'">info</div>
+  <div *ngSwitchCase="'warning'">warning</div>
+  <div *ngSwitchDefault>danger</div>
+</div>
