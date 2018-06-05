@@ -11,13 +11,17 @@ import { HomeComponent } from './components/home/home.component';
 // Importar Rutas
 import {ROUTES} from './app.routes';
 
+// Importar Directivas personalizadas
+import { ResaltadoDirective } from './directives/resaltado.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     NavbarComponent,
     DirectivasComponent,
-    HomeComponent
+    HomeComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,
